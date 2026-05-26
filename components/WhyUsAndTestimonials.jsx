@@ -79,6 +79,7 @@ const testimonials = [
 
 export default function WhyUsAndTestimonials() {
   const sectionRef = useRef(null)
+  const testimonialsRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -94,6 +95,7 @@ export default function WhyUsAndTestimonials() {
       { threshold: 0.05 }
     )
     if (sectionRef.current) observer.observe(sectionRef.current)
+    if (testimonialsRef.current) observer.observe(testimonialsRef.current)
     return () => observer.disconnect()
   }, [])
 
@@ -166,7 +168,7 @@ export default function WhyUsAndTestimonials() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="relative py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-24 lg:py-32 overflow-hidden" ref={testimonialsRef}>
         <div className="absolute inset-0 bg-[#071428]" />
         <div
           className="absolute top-0 left-0 right-0 h-px"
