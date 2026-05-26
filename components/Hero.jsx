@@ -13,9 +13,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0" style={{ background: "linear-gradient(135deg, #040d1a 0%, #071428 40%, #0d2142 70%, #122d57 100%)" }}>
         <img
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80&auto=format&fit=crop" onError={(e) => { e.target.style.display="none" }}
           alt="Construction"
           className="w-full h-full object-cover object-center"
         />
