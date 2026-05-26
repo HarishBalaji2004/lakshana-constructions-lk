@@ -145,8 +145,8 @@ export default function Footer() {
                 </div>
                 <div className="flex gap-3 items-center">
                   <Phone size={13} className="text-amber-500 flex-shrink-0" />
-                  <a href="tel:+919876543210" className="text-slate-400 text-xs hover:text-amber-400 transition-colors">
-                    +91 98765 43210
+                  <a href="tel:+919360333025" className="text-slate-400 text-xs hover:text-amber-400 transition-colors">
+                    +91 93603 33025
                   </a>
                 </div>
                 <div className="flex gap-3 items-center">
@@ -184,6 +184,21 @@ export default function Footer() {
                 Designed with ❤️ for Excellence
               </span>
             </div>
+          </div>
+
+          {/* Infovex credit */}
+          <div className="border-t border-white/[0.03] mt-4 pt-4 text-center">
+            <p className="text-slate-700 text-xs" style={{ fontFamily: 'Space Mono, monospace', fontSize: '0.58rem' }}>
+              Developed &amp; Designed by{' '}
+              <a
+                href="https://infovextech.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-600/60 hover:text-amber-500 transition-colors"
+              >
+                Infovex Technologies
+              </a>
+            </p>
           </div>
         </div>
       </div>
