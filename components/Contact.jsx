@@ -42,7 +42,7 @@ export default function Contact() {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 98765 43210',
+      value: '+91 93603 33025',
     },
     {
       icon: Mail,
@@ -127,7 +127,7 @@ export default function Contact() {
                   >
                     {info.label}
                   </p>
-                  <p className="text-white text-xs font-medium whitespace-pre-line leading-relaxed" style={{ fontFamily: 'Barlow, sans-serif' }}>
+                  <p className="text-white text-xs font-medium whitespace-pre-line leading-relaxed break-all text-center" style={{ fontFamily: 'Barlow, sans-serif' }}>
                     {info.value}
                   </p>
                 </div>
